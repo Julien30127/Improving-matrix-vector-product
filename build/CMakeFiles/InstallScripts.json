@@ -1,0 +1,20 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/cmake_install.cmake",
+		"/home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-build/cmake_install.cmake",
+		"/home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-build/core/cmake_install.cmake",
+		"/home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-build/core/src/cmake_install.cmake",
+		"/home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-build/containers/cmake_install.cmake",
+		"/home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-build/containers/src/cmake_install.cmake",
+		"/home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-build/algorithms/cmake_install.cmake",
+		"/home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-build/algorithms/src/cmake_install.cmake",
+		"/home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-build/simd/cmake_install.cmake",
+		"/home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-build/simd/src/cmake_install.cmake",
+		"/home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-build/example/cmake_install.cmake",
+		"/home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-build/benchmarks/cmake_install.cmake",
+		"/home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/fmt-build/cmake_install.cmake",
+		"/home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/src/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
