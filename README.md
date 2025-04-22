@@ -1,3 +1,4 @@
+HEAD
 # Lab 3: Exercise 2 - Matrix Product
 
 In this exercise, we will use Kokkos for representing matrices and for expressing shared-memory parallelism
@@ -25,3 +26,6 @@ export OMP_PROC_BIND=true
 export OMP_PLACES=cores
 ./build/src/top.matrix_product <M> <N> <K>
 ```
+
+# Improving-matrix-vector-product
+a478198ac55e18286c1423625167c9446870fd8c
