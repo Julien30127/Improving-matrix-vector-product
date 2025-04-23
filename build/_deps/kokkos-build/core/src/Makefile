@@ -175,53 +175,77 @@ kokkoscore/fast:
 	cd /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build && $(MAKE) $(MAKESILENT) -f _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/build.make _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/build
 .PHONY : kokkoscore/fast
 
-Serial/Kokkos_Serial.o: Serial/Kokkos_Serial.cpp.o
-.PHONY : Serial/Kokkos_Serial.o
+OpenMP/Kokkos_OpenMP.o: OpenMP/Kokkos_OpenMP.cpp.o
+.PHONY : OpenMP/Kokkos_OpenMP.o
 
 # target to build an object file
-Serial/Kokkos_Serial.cpp.o:
-	cd /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build && $(MAKE) $(MAKESILENT) -f _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/build.make _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/Serial/Kokkos_Serial.cpp.o
-.PHONY : Serial/Kokkos_Serial.cpp.o
+OpenMP/Kokkos_OpenMP.cpp.o:
+	cd /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build && $(MAKE) $(MAKESILENT) -f _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/build.make _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/OpenMP/Kokkos_OpenMP.cpp.o
+.PHONY : OpenMP/Kokkos_OpenMP.cpp.o
 
-Serial/Kokkos_Serial.i: Serial/Kokkos_Serial.cpp.i
-.PHONY : Serial/Kokkos_Serial.i
+OpenMP/Kokkos_OpenMP.i: OpenMP/Kokkos_OpenMP.cpp.i
+.PHONY : OpenMP/Kokkos_OpenMP.i
 
 # target to preprocess a source file
-Serial/Kokkos_Serial.cpp.i:
-	cd /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build && $(MAKE) $(MAKESILENT) -f _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/build.make _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/Serial/Kokkos_Serial.cpp.i
-.PHONY : Serial/Kokkos_Serial.cpp.i
+OpenMP/Kokkos_OpenMP.cpp.i:
+	cd /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build && $(MAKE) $(MAKESILENT) -f _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/build.make _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/OpenMP/Kokkos_OpenMP.cpp.i
+.PHONY : OpenMP/Kokkos_OpenMP.cpp.i
 
-Serial/Kokkos_Serial.s: Serial/Kokkos_Serial.cpp.s
-.PHONY : Serial/Kokkos_Serial.s
+OpenMP/Kokkos_OpenMP.s: OpenMP/Kokkos_OpenMP.cpp.s
+.PHONY : OpenMP/Kokkos_OpenMP.s
 
 # target to generate assembly for a file
-Serial/Kokkos_Serial.cpp.s:
-	cd /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build && $(MAKE) $(MAKESILENT) -f _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/build.make _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/Serial/Kokkos_Serial.cpp.s
-.PHONY : Serial/Kokkos_Serial.cpp.s
+OpenMP/Kokkos_OpenMP.cpp.s:
+	cd /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build && $(MAKE) $(MAKESILENT) -f _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/build.make _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/OpenMP/Kokkos_OpenMP.cpp.s
+.PHONY : OpenMP/Kokkos_OpenMP.cpp.s
 
-Serial/Kokkos_Serial_Task.o: Serial/Kokkos_Serial_Task.cpp.o
-.PHONY : Serial/Kokkos_Serial_Task.o
+OpenMP/Kokkos_OpenMP_Instance.o: OpenMP/Kokkos_OpenMP_Instance.cpp.o
+.PHONY : OpenMP/Kokkos_OpenMP_Instance.o
 
 # target to build an object file
-Serial/Kokkos_Serial_Task.cpp.o:
-	cd /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build && $(MAKE) $(MAKESILENT) -f _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/build.make _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/Serial/Kokkos_Serial_Task.cpp.o
-.PHONY : Serial/Kokkos_Serial_Task.cpp.o
+OpenMP/Kokkos_OpenMP_Instance.cpp.o:
+	cd /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build && $(MAKE) $(MAKESILENT) -f _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/build.make _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/OpenMP/Kokkos_OpenMP_Instance.cpp.o
+.PHONY : OpenMP/Kokkos_OpenMP_Instance.cpp.o
 
-Serial/Kokkos_Serial_Task.i: Serial/Kokkos_Serial_Task.cpp.i
-.PHONY : Serial/Kokkos_Serial_Task.i
+OpenMP/Kokkos_OpenMP_Instance.i: OpenMP/Kokkos_OpenMP_Instance.cpp.i
+.PHONY : OpenMP/Kokkos_OpenMP_Instance.i
 
 # target to preprocess a source file
-Serial/Kokkos_Serial_Task.cpp.i:
-	cd /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build && $(MAKE) $(MAKESILENT) -f _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/build.make _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/Serial/Kokkos_Serial_Task.cpp.i
-.PHONY : Serial/Kokkos_Serial_Task.cpp.i
+OpenMP/Kokkos_OpenMP_Instance.cpp.i:
+	cd /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build && $(MAKE) $(MAKESILENT) -f _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/build.make _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/OpenMP/Kokkos_OpenMP_Instance.cpp.i
+.PHONY : OpenMP/Kokkos_OpenMP_Instance.cpp.i
 
-Serial/Kokkos_Serial_Task.s: Serial/Kokkos_Serial_Task.cpp.s
-.PHONY : Serial/Kokkos_Serial_Task.s
+OpenMP/Kokkos_OpenMP_Instance.s: OpenMP/Kokkos_OpenMP_Instance.cpp.s
+.PHONY : OpenMP/Kokkos_OpenMP_Instance.s
 
 # target to generate assembly for a file
-Serial/Kokkos_Serial_Task.cpp.s:
-	cd /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build && $(MAKE) $(MAKESILENT) -f _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/build.make _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/Serial/Kokkos_Serial_Task.cpp.s
-.PHONY : Serial/Kokkos_Serial_Task.cpp.s
+OpenMP/Kokkos_OpenMP_Instance.cpp.s:
+	cd /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build && $(MAKE) $(MAKESILENT) -f _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/build.make _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/OpenMP/Kokkos_OpenMP_Instance.cpp.s
+.PHONY : OpenMP/Kokkos_OpenMP_Instance.cpp.s
+
+OpenMP/Kokkos_OpenMP_Task.o: OpenMP/Kokkos_OpenMP_Task.cpp.o
+.PHONY : OpenMP/Kokkos_OpenMP_Task.o
+
+# target to build an object file
+OpenMP/Kokkos_OpenMP_Task.cpp.o:
+	cd /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build && $(MAKE) $(MAKESILENT) -f _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/build.make _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/OpenMP/Kokkos_OpenMP_Task.cpp.o
+.PHONY : OpenMP/Kokkos_OpenMP_Task.cpp.o
+
+OpenMP/Kokkos_OpenMP_Task.i: OpenMP/Kokkos_OpenMP_Task.cpp.i
+.PHONY : OpenMP/Kokkos_OpenMP_Task.i
+
+# target to preprocess a source file
+OpenMP/Kokkos_OpenMP_Task.cpp.i:
+	cd /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build && $(MAKE) $(MAKESILENT) -f _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/build.make _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/OpenMP/Kokkos_OpenMP_Task.cpp.i
+.PHONY : OpenMP/Kokkos_OpenMP_Task.cpp.i
+
+OpenMP/Kokkos_OpenMP_Task.s: OpenMP/Kokkos_OpenMP_Task.cpp.s
+.PHONY : OpenMP/Kokkos_OpenMP_Task.s
+
+# target to generate assembly for a file
+OpenMP/Kokkos_OpenMP_Task.cpp.s:
+	cd /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build && $(MAKE) $(MAKESILENT) -f _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/build.make _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/OpenMP/Kokkos_OpenMP_Task.cpp.s
+.PHONY : OpenMP/Kokkos_OpenMP_Task.cpp.s
 
 impl/Kokkos_Abort.o: impl/Kokkos_Abort.cpp.o
 .PHONY : impl/Kokkos_Abort.o
@@ -596,12 +620,15 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... kokkoscore"
-	@echo "... Serial/Kokkos_Serial.o"
-	@echo "... Serial/Kokkos_Serial.i"
-	@echo "... Serial/Kokkos_Serial.s"
-	@echo "... Serial/Kokkos_Serial_Task.o"
-	@echo "... Serial/Kokkos_Serial_Task.i"
-	@echo "... Serial/Kokkos_Serial_Task.s"
+	@echo "... OpenMP/Kokkos_OpenMP.o"
+	@echo "... OpenMP/Kokkos_OpenMP.i"
+	@echo "... OpenMP/Kokkos_OpenMP.s"
+	@echo "... OpenMP/Kokkos_OpenMP_Instance.o"
+	@echo "... OpenMP/Kokkos_OpenMP_Instance.i"
+	@echo "... OpenMP/Kokkos_OpenMP_Instance.s"
+	@echo "... OpenMP/Kokkos_OpenMP_Task.o"
+	@echo "... OpenMP/Kokkos_OpenMP_Task.i"
+	@echo "... OpenMP/Kokkos_OpenMP_Task.s"
 	@echo "... impl/Kokkos_Abort.o"
 	@echo "... impl/Kokkos_Abort.i"
 	@echo "... impl/Kokkos_Abort.s"

@@ -168,7 +168,7 @@ _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/impl/Kokkos_HostSpace.cpp.
  /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/Kokkos_Abort.hpp \
  /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/Kokkos_Assert.hpp \
  /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-build/KokkosCore_Config_FwdBackend.hpp \
- /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/fwd/Kokkos_Fwd_SERIAL.hpp \
+ /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/fwd/Kokkos_Fwd_OPENMP.hpp \
  /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/Kokkos_Concepts.hpp \
  /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/Kokkos_DetectionIdiom.hpp \
  /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/Kokkos_MemoryTraits.hpp \

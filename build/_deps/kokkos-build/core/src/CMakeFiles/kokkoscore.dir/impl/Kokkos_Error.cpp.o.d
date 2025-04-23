@@ -172,20 +172,17 @@ _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/impl/Kokkos_Error.cpp.o: \
  /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/Kokkos_Assert.hpp \
  /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/impl/Kokkos_Utilities.hpp \
  /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-build/KokkosCore_Config_FwdBackend.hpp \
- /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/fwd/Kokkos_Fwd_SERIAL.hpp \
+ /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/fwd/Kokkos_Fwd_OPENMP.hpp \
  /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-build/KokkosCore_Config_DeclareBackend.hpp \
- /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/decl/Kokkos_Declare_SERIAL.hpp \
- /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/Serial/Kokkos_Serial.hpp \
- /usr/include/c++/11/cstddef /usr/include/c++/11/iterator \
- /usr/include/c++/11/bits/stream_iterator.h /usr/include/c++/11/mutex \
- /usr/include/c++/11/chrono /usr/include/c++/11/ratio \
- /usr/include/c++/11/limits /usr/include/c++/11/bits/parse_numbers.h \
- /usr/include/c++/11/bits/std_mutex.h \
- /usr/include/c++/11/bits/unique_lock.h /usr/include/c++/11/thread \
- /usr/include/c++/11/bits/std_thread.h /usr/include/c++/11/bits/refwrap.h \
- /usr/include/c++/11/bits/this_thread_sleep.h \
- /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/Kokkos_Layout.hpp \
+ /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/decl/Kokkos_Declare_OPENMP.hpp \
+ /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/OpenMP/Kokkos_OpenMP.hpp \
+ /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/Kokkos_HostSpace.hpp \
+ /usr/include/c++/11/cstring /usr/include/string.h /usr/include/strings.h \
+ /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/Kokkos_Concepts.hpp \
+ /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/Kokkos_DetectionIdiom.hpp \
+ /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/Kokkos_MemoryTraits.hpp \
  /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/impl/Kokkos_Traits.hpp \
+ /usr/include/c++/11/cstddef \
  /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/impl/Kokkos_BitOps.hpp \
  /usr/include/c++/11/climits \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
@@ -196,11 +193,6 @@ _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/impl/Kokkos_Error.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
- /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/Kokkos_HostSpace.hpp \
- /usr/include/c++/11/cstring /usr/include/string.h /usr/include/strings.h \
- /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/Kokkos_Concepts.hpp \
- /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/Kokkos_DetectionIdiom.hpp \
- /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/Kokkos_MemoryTraits.hpp \
  /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/impl/Kokkos_SharedAlloc.hpp \
  /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/impl/Kokkos_Tools.hpp \
  /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/impl/Kokkos_Profiling.hpp \
@@ -214,12 +206,14 @@ _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/impl/Kokkos_Error.cpp.o: \
  /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/traits/Kokkos_IndexTypeTrait.hpp \
  /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/traits/Kokkos_IterationPatternTrait.hpp \
  /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/Kokkos_Rank.hpp \
+ /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/Kokkos_Layout.hpp \
  /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/traits/Kokkos_LaunchBoundsTrait.hpp \
  /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/traits/Kokkos_OccupancyControlTrait.hpp \
  /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/traits/Kokkos_ScheduleTrait.hpp \
  /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/traits/Kokkos_WorkItemPropertyTrait.hpp \
  /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/traits/Kokkos_WorkTagTrait.hpp \
  /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/Kokkos_TypeInfo.hpp \
+ /usr/include/c++/11/limits \
  /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/Kokkos_Tuners.hpp \
  /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/KokkosExp_MDRangePolicy.hpp \
  /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/Kokkos_Array.hpp \
@@ -231,7 +225,8 @@ _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/impl/Kokkos_Error.cpp.o: \
  /usr/include/c++/11/bits/stl_tempbuf.h \
  /usr/include/c++/11/bits/uniform_int_dist.h \
  /usr/include/c++/11/pstl/glue_algorithm_defs.h \
- /usr/include/c++/11/functional /usr/include/c++/11/bits/std_function.h \
+ /usr/include/c++/11/functional /usr/include/c++/11/bits/refwrap.h \
+ /usr/include/c++/11/bits/std_function.h \
  /usr/include/c++/11/unordered_map \
  /usr/include/c++/11/ext/aligned_buffer.h \
  /usr/include/c++/11/bits/hashtable.h \
@@ -288,46 +283,18 @@ _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/impl/Kokkos_Error.cpp.o: \
  /usr/include/c++/11/bits/atomic_base.h \
  /usr/include/c++/11/bits/atomic_lockfree_defines.h \
  /usr/include/c++/11/backward/auto_ptr.h \
- /usr/include/c++/11/pstl/glue_memory_defs.h \
+ /usr/include/c++/11/pstl/glue_memory_defs.h /usr/include/c++/11/mutex \
+ /usr/include/c++/11/chrono /usr/include/c++/11/ratio \
+ /usr/include/c++/11/bits/parse_numbers.h \
+ /usr/include/c++/11/bits/std_mutex.h \
+ /usr/include/c++/11/bits/unique_lock.h \
  /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/impl/Kokkos_HostSpace_deepcopy.hpp \
  /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/Kokkos_ScratchSpace.hpp \
- /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/impl/Kokkos_HostThreadTeam.hpp \
- /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/Kokkos_Pair.hpp \
- /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/Kokkos_Atomic.hpp \
- /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/Kokkos_Atomics_Desul_Wrapper.hpp \
- /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/tpls/desul/include/desul/atomics.hpp \
- /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/tpls/desul/include/desul/atomics/Atomic_Ref.hpp \
- /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/tpls/desul/include/desul/atomics/Common.hpp \
- /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/tpls/desul/include/desul/atomics/Macros.hpp \
- /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-build/core/src/desul/atomics/Config.hpp \
- /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/tpls/desul/include/desul/atomics/Generic.hpp \
- /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/tpls/desul/include/desul/atomics/Compare_Exchange.hpp \
- /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/tpls/desul/include/desul/atomics/Compare_Exchange_GCC.hpp \
- /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/tpls/desul/include/desul/atomics/Lock_Array.hpp \
- /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/tpls/desul/include/desul/atomics/Thread_Fence_GCC.hpp \
- /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/tpls/desul/include/desul/atomics/Adapt_GCC.hpp \
- /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/tpls/desul/include/desul/atomics/Compare_Exchange_ScopeCaller.hpp \
- /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/tpls/desul/include/desul/atomics/Fetch_Op.hpp \
- /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/tpls/desul/include/desul/atomics/Fetch_Op_GCC.hpp \
- /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/tpls/desul/include/desul/atomics/Fetch_Op_ScopeCaller.hpp \
- /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/tpls/desul/include/desul/atomics/Fetch_Op_Generic.hpp \
- /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/tpls/desul/include/desul/atomics/Lock_Based_Fetch_Op.hpp \
- /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/tpls/desul/include/desul/atomics/Lock_Based_Fetch_Op_Host.hpp \
- /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/tpls/desul/include/desul/atomics/Thread_Fence.hpp \
- /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/tpls/desul/include/desul/atomics/Thread_Fence_ScopeCaller.hpp \
- /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/tpls/desul/include/desul/atomics/Lock_Free_Fetch_Op.hpp \
- /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/tpls/desul/include/desul/atomics/Operator_Function_Objects.hpp \
- /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/impl/Kokkos_Volatile_Load.hpp \
- /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/impl/Kokkos_FunctorAnalysis.hpp \
- /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/impl/Kokkos_HostBarrier.hpp \
- /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/impl/Kokkos_HostSharedPtr.hpp \
- /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/impl/Kokkos_InitializationSettings.hpp \
- /usr/include/c++/11/optional \
- /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/Serial/Kokkos_Serial_Parallel_Range.hpp \
  /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/Kokkos_Parallel.hpp \
  /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/Kokkos_View.hpp \
  /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/View/Kokkos_BasicView.hpp \
  /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/View/Kokkos_ViewAlloc.hpp \
+ /usr/include/c++/11/optional \
  /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/impl/Kokkos_ZeroMemset_fwd.hpp \
  /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/View/Kokkos_ViewAccessPreconditionsCheck.hpp \
  /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/View/MDSpan/Kokkos_MDSpan_Header.hpp \
@@ -362,28 +329,64 @@ _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/impl/Kokkos_Error.cpp.o: \
  /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/View/MDSpan/Kokkos_MDSpan_Header.hpp \
  /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/View/Kokkos_ViewDataAnalysis.hpp \
  /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/View/MDSpan/Kokkos_MDSpan_Accessor.hpp \
+ /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/tpls/desul/include/desul/atomics.hpp \
+ /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/tpls/desul/include/desul/atomics/Atomic_Ref.hpp \
+ /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/tpls/desul/include/desul/atomics/Common.hpp \
+ /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/tpls/desul/include/desul/atomics/Macros.hpp \
+ /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-build/core/src/desul/atomics/Config.hpp \
+ /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/tpls/desul/include/desul/atomics/Generic.hpp \
+ /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/tpls/desul/include/desul/atomics/Compare_Exchange.hpp \
+ /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/tpls/desul/include/desul/atomics/Compare_Exchange_GCC.hpp \
+ /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/tpls/desul/include/desul/atomics/Lock_Array.hpp \
+ /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/tpls/desul/include/desul/atomics/Thread_Fence_GCC.hpp \
+ /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/tpls/desul/include/desul/atomics/Adapt_GCC.hpp \
+ /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/tpls/desul/include/desul/atomics/Compare_Exchange_ScopeCaller.hpp \
+ /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/tpls/desul/include/desul/atomics/Fetch_Op.hpp \
+ /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/tpls/desul/include/desul/atomics/Fetch_Op_GCC.hpp \
+ /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/tpls/desul/include/desul/atomics/Fetch_Op_ScopeCaller.hpp \
+ /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/tpls/desul/include/desul/atomics/Fetch_Op_Generic.hpp \
+ /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/tpls/desul/include/desul/atomics/Lock_Based_Fetch_Op.hpp \
+ /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/tpls/desul/include/desul/atomics/Lock_Based_Fetch_Op_Host.hpp \
+ /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/tpls/desul/include/desul/atomics/Thread_Fence.hpp \
+ /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/tpls/desul/include/desul/atomics/Thread_Fence_ScopeCaller.hpp \
+ /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/tpls/desul/include/desul/atomics/Lock_Free_Fetch_Op.hpp \
+ /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/tpls/desul/include/desul/atomics/Operator_Function_Objects.hpp \
  /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/View/Kokkos_ViewLegacy.hpp \
  /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/View/MDSpan/Kokkos_MDSpan_Extents.hpp \
  /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/Kokkos_MinMax.hpp \
+ /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/Kokkos_Pair.hpp \
  /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/View/Kokkos_ViewMapping.hpp \
  /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/Kokkos_Extents.hpp \
  /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/View/Kokkos_ViewTracker.hpp \
  /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/View/Kokkos_ViewAtomic.hpp \
+ /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/Kokkos_Atomic.hpp \
+ /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/Kokkos_Atomics_Desul_Wrapper.hpp \
+ /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/impl/Kokkos_Volatile_Load.hpp \
  /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/View/Kokkos_ViewCommonType.hpp \
  /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/View/Kokkos_ViewUniformType.hpp \
  /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/impl/Kokkos_Tools_Generic.hpp \
+ /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/impl/Kokkos_FunctorAnalysis.hpp \
  /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/Kokkos_Parallel_Reduce.hpp \
  /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/Kokkos_ReductionIdentity.hpp \
  /usr/include/c++/11/cfloat \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h \
- /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/Serial/Kokkos_Serial_Parallel_MDRange.hpp \
- /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/Serial/Kokkos_Serial_Parallel_Team.hpp \
- /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/Serial/Kokkos_Serial_Task.hpp \
- /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/Kokkos_TaskScheduler_fwd.hpp \
- /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/impl/Kokkos_TaskQueue.hpp \
- /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/Kokkos_MemoryPool.hpp \
+ /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/impl/Kokkos_HostSharedPtr.hpp \
+ /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/impl/Kokkos_InitializationSettings.hpp \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/omp.h \
+ /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/OpenMP/Kokkos_OpenMP_Instance.hpp \
+ /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/impl/Kokkos_HostThreadTeam.hpp \
+ /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/impl/Kokkos_HostBarrier.hpp \
  /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/impl/Kokkos_ConcurrentBitset.hpp \
  /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/impl/Kokkos_ClockTic.hpp \
+ /usr/include/c++/11/numeric /usr/include/c++/11/bits/stl_numeric.h \
+ /usr/include/c++/11/pstl/glue_numeric_defs.h \
+ /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/OpenMP/Kokkos_OpenMP_Team.hpp \
+ /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/OpenMP/Kokkos_OpenMP_Task.hpp \
+ /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/Kokkos_TaskScheduler_fwd.hpp \
+ /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/impl/Kokkos_TaskTeamMember.hpp \
+ /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/Kokkos_MemoryPool.hpp \
+ /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/Kokkos_Future.hpp \
+ /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/impl/Kokkos_TaskQueue.hpp \
  /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/impl/Kokkos_TaskBase.hpp \
  /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/impl/Kokkos_LIFO.hpp \
  /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/Kokkos_PointerOwnership.hpp \
@@ -394,18 +397,18 @@ _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/impl/Kokkos_Error.cpp.o: \
  /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/impl/Kokkos_VLAEmulation.hpp \
  /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/impl/Kokkos_ChaseLev.hpp \
  /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/impl/Kokkos_EBO.hpp \
- /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/impl/Kokkos_TaskTeamMember.hpp \
- /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/Kokkos_Future.hpp \
  /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/impl/Kokkos_SingleTaskQueue.hpp \
  /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/impl/Kokkos_TaskQueueMemoryManager.hpp \
  /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/impl/Kokkos_TaskQueueCommon.hpp \
  /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/impl/Kokkos_TaskQueueMultiple.hpp \
  /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/impl/Kokkos_TaskQueueMultiple_impl.hpp \
  /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/impl/Kokkos_TaskPolicyData.hpp \
- /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/Serial/Kokkos_Serial_UniqueToken.hpp \
+ /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/OpenMP/Kokkos_OpenMP_MDRangePolicy.hpp \
+ /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/OpenMP/Kokkos_OpenMP_UniqueToken.hpp \
  /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/Kokkos_UniqueToken.hpp \
- /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/Serial/Kokkos_Serial_MDRangePolicy.hpp \
- /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/Serial/Kokkos_Serial_ZeroMemset.hpp \
+ /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/OpenMP/Kokkos_OpenMP_Parallel_For.hpp \
+ /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/OpenMP/Kokkos_OpenMP_Parallel_Reduce.hpp \
+ /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/OpenMP/Kokkos_OpenMP_Parallel_Scan.hpp \
  /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/Kokkos_Half.hpp \
  /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/impl/Kokkos_Half_FloatingPointWrapper.hpp \
  /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/Kokkos_BitManipulation.hpp \
@@ -429,6 +432,6 @@ _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/impl/Kokkos_Error.cpp.o: \
  /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/impl/Kokkos_TeamMDPolicy.hpp \
  /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/Kokkos_Crs.hpp \
  /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/Kokkos_WorkGraphPolicy.hpp \
- /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/Serial/Kokkos_Serial_WorkGraphPolicy.hpp \
+ /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/OpenMP/Kokkos_OpenMP_WorkGraphPolicy.hpp \
  /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/impl/Kokkos_Combined_Reducer.hpp \
  /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/Kokkos_AcquireUniqueTokenImpl.hpp

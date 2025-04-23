@@ -19,7 +19,7 @@
 #ifndef KOKKOS_FWD_HPP_
 #define KOKKOS_FWD_HPP_
 
-#include <fwd/Kokkos_Fwd_SERIAL.hpp>
+#include <fwd/Kokkos_Fwd_OPENMP.hpp>
 
 
 #endif

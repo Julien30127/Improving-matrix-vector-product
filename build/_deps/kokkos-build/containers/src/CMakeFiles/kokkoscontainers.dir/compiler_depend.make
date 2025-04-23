@@ -63,15 +63,16 @@ _deps/kokkos-build/containers/src/CMakeFiles/kokkoscontainers.dir/impl/Kokkos_Un
   _deps/kokkos-src/core/src/Kokkos_View.hpp \
   _deps/kokkos-src/core/src/Kokkos_WorkGraphPolicy.hpp \
   _deps/kokkos-src/core/src/Kokkos_hwloc.hpp \
-  _deps/kokkos-src/core/src/Serial/Kokkos_Serial.hpp \
-  _deps/kokkos-src/core/src/Serial/Kokkos_Serial_MDRangePolicy.hpp \
-  _deps/kokkos-src/core/src/Serial/Kokkos_Serial_Parallel_MDRange.hpp \
-  _deps/kokkos-src/core/src/Serial/Kokkos_Serial_Parallel_Range.hpp \
-  _deps/kokkos-src/core/src/Serial/Kokkos_Serial_Parallel_Team.hpp \
-  _deps/kokkos-src/core/src/Serial/Kokkos_Serial_Task.hpp \
-  _deps/kokkos-src/core/src/Serial/Kokkos_Serial_UniqueToken.hpp \
-  _deps/kokkos-src/core/src/Serial/Kokkos_Serial_WorkGraphPolicy.hpp \
-  _deps/kokkos-src/core/src/Serial/Kokkos_Serial_ZeroMemset.hpp \
+  _deps/kokkos-src/core/src/OpenMP/Kokkos_OpenMP.hpp \
+  _deps/kokkos-src/core/src/OpenMP/Kokkos_OpenMP_Instance.hpp \
+  _deps/kokkos-src/core/src/OpenMP/Kokkos_OpenMP_MDRangePolicy.hpp \
+  _deps/kokkos-src/core/src/OpenMP/Kokkos_OpenMP_Parallel_For.hpp \
+  _deps/kokkos-src/core/src/OpenMP/Kokkos_OpenMP_Parallel_Reduce.hpp \
+  _deps/kokkos-src/core/src/OpenMP/Kokkos_OpenMP_Parallel_Scan.hpp \
+  _deps/kokkos-src/core/src/OpenMP/Kokkos_OpenMP_Task.hpp \
+  _deps/kokkos-src/core/src/OpenMP/Kokkos_OpenMP_Team.hpp \
+  _deps/kokkos-src/core/src/OpenMP/Kokkos_OpenMP_UniqueToken.hpp \
+  _deps/kokkos-src/core/src/OpenMP/Kokkos_OpenMP_WorkGraphPolicy.hpp \
   _deps/kokkos-src/core/src/View/Hooks/Kokkos_ViewHooks.hpp \
   _deps/kokkos-src/core/src/View/Kokkos_BasicView.hpp \
   _deps/kokkos-src/core/src/View/Kokkos_ViewAccessPreconditionsCheck.hpp \
@@ -89,8 +90,8 @@ _deps/kokkos-build/containers/src/CMakeFiles/kokkoscontainers.dir/impl/Kokkos_Un
   _deps/kokkos-src/core/src/View/MDSpan/Kokkos_MDSpan_Extents.hpp \
   _deps/kokkos-src/core/src/View/MDSpan/Kokkos_MDSpan_Header.hpp \
   _deps/kokkos-src/core/src/View/MDSpan/Kokkos_MDSpan_Layout.hpp \
-  _deps/kokkos-src/core/src/decl/Kokkos_Declare_SERIAL.hpp \
-  _deps/kokkos-src/core/src/fwd/Kokkos_Fwd_SERIAL.hpp \
+  _deps/kokkos-src/core/src/decl/Kokkos_Declare_OPENMP.hpp \
+  _deps/kokkos-src/core/src/fwd/Kokkos_Fwd_OPENMP.hpp \
   _deps/kokkos-src/core/src/impl/KokkosExp_Host_IterateTile.hpp \
   _deps/kokkos-src/core/src/impl/Kokkos_AnalyzePolicy.hpp \
   _deps/kokkos-src/core/src/impl/Kokkos_BitOps.hpp \
@@ -265,7 +266,6 @@ _deps/kokkos-build/containers/src/CMakeFiles/kokkoscontainers.dir/impl/Kokkos_Un
   /usr/include/c++/11/bits/std_abs.h \
   /usr/include/c++/11/bits/std_function.h \
   /usr/include/c++/11/bits/std_mutex.h \
-  /usr/include/c++/11/bits/std_thread.h \
   /usr/include/c++/11/bits/stl_algo.h \
   /usr/include/c++/11/bits/stl_algobase.h \
   /usr/include/c++/11/bits/stl_bvector.h \
@@ -277,6 +277,7 @@ _deps/kokkos-build/containers/src/CMakeFiles/kokkoscontainers.dir/impl/Kokkos_Un
   /usr/include/c++/11/bits/stl_iterator_base_types.h \
   /usr/include/c++/11/bits/stl_map.h \
   /usr/include/c++/11/bits/stl_multimap.h \
+  /usr/include/c++/11/bits/stl_numeric.h \
   /usr/include/c++/11/bits/stl_pair.h \
   /usr/include/c++/11/bits/stl_raw_storage_iter.h \
   /usr/include/c++/11/bits/stl_relops.h \
@@ -284,12 +285,10 @@ _deps/kokkos-build/containers/src/CMakeFiles/kokkoscontainers.dir/impl/Kokkos_Un
   /usr/include/c++/11/bits/stl_tree.h \
   /usr/include/c++/11/bits/stl_uninitialized.h \
   /usr/include/c++/11/bits/stl_vector.h \
-  /usr/include/c++/11/bits/stream_iterator.h \
   /usr/include/c++/11/bits/streambuf.tcc \
   /usr/include/c++/11/bits/streambuf_iterator.h \
   /usr/include/c++/11/bits/string_view.tcc \
   /usr/include/c++/11/bits/stringfwd.h \
-  /usr/include/c++/11/bits/this_thread_sleep.h \
   /usr/include/c++/11/bits/uniform_int_dist.h \
   /usr/include/c++/11/bits/unique_lock.h \
   /usr/include/c++/11/bits/unique_ptr.h \
@@ -331,18 +330,19 @@ _deps/kokkos-build/containers/src/CMakeFiles/kokkoscontainers.dir/impl/Kokkos_Un
   /usr/include/c++/11/ios \
   /usr/include/c++/11/iosfwd \
   /usr/include/c++/11/istream \
-  /usr/include/c++/11/iterator \
   /usr/include/c++/11/limits \
   /usr/include/c++/11/locale \
   /usr/include/c++/11/map \
   /usr/include/c++/11/memory \
   /usr/include/c++/11/mutex \
   /usr/include/c++/11/new \
+  /usr/include/c++/11/numeric \
   /usr/include/c++/11/optional \
   /usr/include/c++/11/ostream \
   /usr/include/c++/11/pstl/execution_defs.h \
   /usr/include/c++/11/pstl/glue_algorithm_defs.h \
   /usr/include/c++/11/pstl/glue_memory_defs.h \
+  /usr/include/c++/11/pstl/glue_numeric_defs.h \
   /usr/include/c++/11/pstl/pstl_config.h \
   /usr/include/c++/11/ratio \
   /usr/include/c++/11/sstream \
@@ -351,7 +351,6 @@ _deps/kokkos-build/containers/src/CMakeFiles/kokkoscontainers.dir/impl/Kokkos_Un
   /usr/include/c++/11/string \
   /usr/include/c++/11/string_view \
   /usr/include/c++/11/system_error \
-  /usr/include/c++/11/thread \
   /usr/include/c++/11/tr1/bessel_function.tcc \
   /usr/include/c++/11/tr1/beta_function.tcc \
   /usr/include/c++/11/tr1/ell_integral.tcc \
@@ -493,6 +492,7 @@ _deps/kokkos-build/containers/src/CMakeFiles/kokkoscontainers.dir/impl/Kokkos_Un
   /usr/include/x86_64-linux-gnu/sys/types.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/omp.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
@@ -578,8 +578,6 @@ _deps/kokkos-build/containers/src/CMakeFiles/kokkoscontainers.dir/impl/Kokkos_Un
 /usr/include/x86_64-linux-gnu/bits/math-vector.h:
 
 /usr/include/x86_64-linux-gnu/bits/long-double.h:
-
-/usr/include/x86_64-linux-gnu/bits/locale.h:
 
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
 
@@ -667,11 +665,11 @@ _deps/kokkos-build/containers/src/CMakeFiles/kokkoscontainers.dir/impl/Kokkos_Un
 
 /usr/include/c++/11/pstl/pstl_config.h:
 
+/usr/include/x86_64-linux-gnu/bits/locale.h:
+
+/usr/include/c++/11/pstl/glue_numeric_defs.h:
+
 /usr/include/c++/11/pstl/glue_memory_defs.h:
-
-/usr/include/c++/11/stdexcept:
-
-/usr/include/c++/11/pstl/glue_algorithm_defs.h:
 
 /usr/include/c++/11/optional:
 
@@ -755,6 +753,8 @@ _deps/kokkos-build/containers/src/CMakeFiles/kokkoscontainers.dir/impl/Kokkos_Un
 
 /usr/include/c++/11/cfloat:
 
+/usr/include/c++/11/cassert:
+
 /usr/include/c++/11/bits/vector.tcc:
 
 /usr/include/c++/11/bits/uses_allocator.h:
@@ -769,8 +769,6 @@ _deps/kokkos-build/containers/src/CMakeFiles/kokkoscontainers.dir/impl/Kokkos_Un
 
 /usr/include/c++/11/bits/streambuf.tcc:
 
-/usr/include/c++/11/bits/stream_iterator.h:
-
 /usr/include/c++/11/cstddef:
 
 /usr/include/c++/11/bits/stl_vector.h:
@@ -778,6 +776,8 @@ _deps/kokkos-build/containers/src/CMakeFiles/kokkoscontainers.dir/impl/Kokkos_Un
 /usr/include/limits.h:
 
 /usr/include/c++/11/bits/stl_relops.h:
+
+/usr/include/c++/11/bits/stl_numeric.h:
 
 /usr/include/c++/11/bits/stl_multimap.h:
 
@@ -815,6 +815,8 @@ _deps/kokkos-src/core/src/impl/Kokkos_Traits.hpp:
 
 _deps/kokkos-src/tpls/desul/include/desul/atomics/Lock_Free_Fetch_Op.hpp:
 
+_deps/kokkos-src/core/src/impl/Kokkos_MultipleTaskQueue.hpp:
+
 /usr/include/c++/11/streambuf:
 
 _deps/kokkos-src/core/src/impl/Kokkos_TaskNode.hpp:
@@ -824,6 +826,8 @@ _deps/kokkos-src/core/src/impl/Kokkos_InitializationSettings.hpp:
 _deps/kokkos-src/tpls/desul/include/desul/atomics.hpp:
 
 _deps/kokkos-src/core/src/impl/Kokkos_HostThreadTeam.hpp:
+
+_deps/kokkos-src/core/src/OpenMP/Kokkos_OpenMP_Instance.hpp:
 
 _deps/kokkos-src/tpls/desul/include/desul/atomics/Fetch_Op_GCC.hpp:
 
@@ -836,14 +840,6 @@ _deps/kokkos-src/core/src/impl/Kokkos_Half_NumericTraits.hpp:
 /usr/include/c++/11/tr1/hypergeometric.tcc:
 
 _deps/kokkos-src/core/src/Kokkos_Parallel_Reduce.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
-
-_deps/kokkos-src/core/src/Kokkos_Clamp.hpp:
-
-_deps/kokkos-src/tpls/desul/include/desul/atomics/Thread_Fence_GCC.hpp:
-
-_deps/kokkos-src/core/src/Kokkos_NumericTraits.hpp:
 
 _deps/kokkos-src/core/src/impl/Kokkos_TaskBase.hpp:
 
@@ -863,16 +859,6 @@ _deps/kokkos-src/core/src/impl/Kokkos_ChaseLev.hpp:
 
 /usr/include/c++/11/bits/ostream.tcc:
 
-/usr/include/c++/11/bits/stl_map.h:
-
-_deps/kokkos-src/core/src/impl/Kokkos_LinkedListNode.hpp:
-
-_deps/kokkos-src/core/src/fwd/Kokkos_Fwd_SERIAL.hpp:
-
-/usr/include/c++/11/bits/functexcept.h:
-
-_deps/kokkos-src/core/src/decl/Kokkos_Declare_SERIAL.hpp:
-
 _deps/kokkos-src/core/src/View/MDSpan/Kokkos_MDSpan_Header.hpp:
 
 _deps/kokkos-src/core/src/impl/Kokkos_Half_FloatingPointWrapper.hpp:
@@ -883,10 +869,6 @@ _deps/kokkos-src/core/src/View/Kokkos_ViewAccessPreconditionsCheck.hpp:
 
 _deps/kokkos-src/core/src/View/MDSpan/Kokkos_MDSpan_Extents.hpp:
 
-_deps/kokkos-src/core/src/View/MDSpan/Kokkos_MDSpan_Accessor.hpp:
-
-_deps/kokkos-src/core/src/Serial/Kokkos_Serial.hpp:
-
 _deps/kokkos-src/core/src/impl/Kokkos_ClockTic.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/timesize.h:
@@ -895,7 +877,13 @@ _deps/kokkos-src/core/src/View/Kokkos_ViewTraits.hpp:
 
 _deps/kokkos-src/core/src/impl/Kokkos_Tools.hpp:
 
+/usr/include/c++/11/bits/functexcept.h:
+
 _deps/kokkos-src/core/src/View/Kokkos_ViewMapping.hpp:
+
+_deps/kokkos-src/core/src/View/MDSpan/Kokkos_MDSpan_Accessor.hpp:
+
+_deps/kokkos-src/core/src/OpenMP/Kokkos_OpenMP_Parallel_Reduce.hpp:
 
 /usr/include/c++/11/tr1/poly_laguerre.tcc:
 
@@ -909,11 +897,7 @@ _deps/kokkos-src/core/src/impl/Kokkos_ZeroMemset_fwd.hpp:
 
 _deps/kokkos-src/core/src/View/Kokkos_ViewLegacy.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/endian.h:
-
-_deps/kokkos-src/core/src/impl/Kokkos_HostSharedPtr.hpp:
-
-_deps/kokkos-src/core/src/traits/Kokkos_PolicyTraitAdaptor.hpp:
+_deps/kokkos-src/core/src/impl/KokkosExp_Host_IterateTile.hpp:
 
 /usr/include/x86_64-linux-gnu/sys/select.h:
 
@@ -921,21 +905,49 @@ _deps/kokkos-src/core/src/View/Kokkos_ViewDataAnalysis.hpp:
 
 _deps/kokkos-src/core/src/View/Kokkos_ViewAtomic.hpp:
 
-_deps/kokkos-src/core/src/impl/KokkosExp_Host_IterateTile.hpp:
-
 _deps/kokkos-src/core/src/View/Kokkos_BasicView.hpp:
 
-_deps/kokkos-src/core/src/Serial/Kokkos_Serial_ZeroMemset.hpp:
+_deps/kokkos-src/core/src/OpenMP/Kokkos_OpenMP_UniqueToken.hpp:
 
-_deps/kokkos-src/core/src/Kokkos_Core.hpp:
+/usr/include/c++/11/bits/quoted_string.h:
 
-_deps/kokkos-src/core/src/Serial/Kokkos_Serial_WorkGraphPolicy.hpp:
+/usr/include/c++/11/bits/stl_map.h:
 
-_deps/kokkos-src/core/src/impl/Kokkos_MultipleTaskQueue.hpp:
+_deps/kokkos-src/core/src/impl/Kokkos_LinkedListNode.hpp:
 
-_deps/kokkos-src/core/src/Serial/Kokkos_Serial_UniqueToken.hpp:
+_deps/kokkos-src/core/src/OpenMP/Kokkos_OpenMP_Team.hpp:
 
-_deps/kokkos-src/core/src/Serial/Kokkos_Serial_Parallel_Team.hpp:
+_deps/kokkos-src/core/src/OpenMP/Kokkos_OpenMP_Task.hpp:
+
+_deps/kokkos-src/core/src/impl/Kokkos_TaskQueueMultiple.hpp:
+
+_deps/kokkos-build/KokkosCore_Config_FwdBackend.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/endian.h:
+
+_deps/kokkos-src/core/src/impl/Kokkos_HostSharedPtr.hpp:
+
+_deps/kokkos-src/core/src/traits/Kokkos_PolicyTraitAdaptor.hpp:
+
+_deps/kokkos-src/core/src/OpenMP/Kokkos_OpenMP_Parallel_For.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
+
+_deps/kokkos-src/core/src/Kokkos_Clamp.hpp:
+
+_deps/kokkos-src/tpls/desul/include/desul/atomics/Thread_Fence_GCC.hpp:
+
+_deps/kokkos-src/core/src/OpenMP/Kokkos_OpenMP_MDRangePolicy.hpp:
+
+/usr/include/c++/11/bits/locale_facets_nonio.tcc:
+
+_deps/kokkos-src/core/src/Kokkos_NumericTraits.hpp:
+
+/usr/include/c++/11/stdexcept:
+
+/usr/include/c++/11/pstl/glue_algorithm_defs.h:
+
+_deps/kokkos-src/core/src/OpenMP/Kokkos_OpenMP.hpp:
 
 _deps/kokkos-src/core/src/impl/Kokkos_Half_MathematicalFunctions.hpp:
 
@@ -947,6 +959,16 @@ _deps/kokkos-src/tpls/mdspan/include/experimental/__p2642_bits/layout_padded_fwd
 
 _deps/kokkos-src/core/src/impl/Kokkos_GraphImpl_fwd.hpp:
 
+/usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h:
+
+_deps/kokkos-src/core/src/impl/Kokkos_ConcurrentBitset.hpp:
+
+_deps/kokkos-src/core/src/decl/Kokkos_Declare_OPENMP.hpp:
+
+_deps/kokkos-src/core/src/View/Hooks/Kokkos_ViewHooks.hpp:
+
+_deps/kokkos-src/core/src/Kokkos_DetectionIdiom.hpp:
+
 /usr/include/c++/11/cinttypes:
 
 _deps/kokkos-src/core/src/View/MDSpan/Kokkos_MDSpan_Layout.hpp:
@@ -956,8 +978,6 @@ _deps/kokkos-src/core/src/View/MDSpan/Kokkos_MDSpan_Layout.hpp:
 /usr/include/c++/11/tr1/gamma.tcc:
 
 _deps/kokkos-src/containers/src/Kokkos_Bitset.hpp:
-
-_deps/kokkos-src/core/src/Serial/Kokkos_Serial_MDRangePolicy.hpp:
 
 _deps/kokkos-src/core/src/Kokkos_Tuners.hpp:
 
@@ -1003,6 +1023,8 @@ _deps/kokkos-src/core/src/impl/Kokkos_Profiling_DeviceInfo.hpp:
 
 _deps/kokkos-src/tpls/mdspan/include/experimental/__p0009_bits/extents.hpp:
 
+/usr/include/c++/11/numeric:
+
 _deps/kokkos-src/core/src/Kokkos_MinMax.hpp:
 
 _deps/kokkos-src/core/src/Kokkos_Timer.hpp:
@@ -1027,17 +1049,15 @@ _deps/kokkos-src/core/src/Kokkos_Array.hpp:
 
 _deps/kokkos-src/core/src/Kokkos_TaskScheduler_fwd.hpp:
 
-_deps/kokkos-src/core/src/impl/Kokkos_TaskPolicyData.hpp:
-
 /usr/include/c++/11/bits/shared_ptr_atomic.h:
 
 _deps/kokkos-src/core/src/Kokkos_Core_fwd.hpp:
 
 /usr/include/c++/11/bits/stl_iterator_base_types.h:
 
-_deps/kokkos-src/core/src/View/Kokkos_ViewTracker.hpp:
-
 _deps/kokkos-src/core/src/impl/Kokkos_BitOps.hpp:
+
+_deps/kokkos-src/core/src/View/Kokkos_ViewTracker.hpp:
 
 _deps/kokkos-src/core/src/Kokkos_Atomics_Desul_Wrapper.hpp:
 
@@ -1053,21 +1073,11 @@ _deps/kokkos-src/core/src/impl/Kokkos_OptionalRef.hpp:
 
 _deps/kokkos-src/tpls/mdspan/include/experimental/__p0009_bits/config.hpp:
 
-/usr/include/c++/11/cassert:
-
-_deps/kokkos-src/core/src/Serial/Kokkos_Serial_Parallel_MDRange.hpp:
-
-_deps/kokkos-src/core/src/impl/Kokkos_TaskQueueMultiple.hpp:
-
-_deps/kokkos-build/KokkosCore_Config_FwdBackend.hpp:
-
 /usr/include/c++/11/tr1/modified_bessel_func.tcc:
 
 _deps/kokkos-src/core/src/impl/Kokkos_DesulAtomicsConfig.hpp:
 
 _deps/kokkos-src/containers/src/impl/Kokkos_Functional_impl.hpp:
-
-/usr/include/c++/11/thread:
 
 /usr/include/c++/11/ratio:
 
@@ -1083,15 +1093,17 @@ _deps/kokkos-src/core/src/View/Kokkos_ViewUniformType.hpp:
 
 _deps/kokkos-src/core/src/KokkosExp_MDRangePolicy.hpp:
 
-_deps/kokkos-src/core/src/Serial/Kokkos_Serial_Task.hpp:
-
 _deps/kokkos-build/core/src/desul/atomics/Config.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/floatn.h:
 
-/usr/include/c++/11/iterator:
-
 /usr/include/c++/11/bits/range_access.h:
+
+_deps/kokkos-src/core/src/fwd/Kokkos_Fwd_OPENMP.hpp:
+
+_deps/kokkos-src/tpls/mdspan/include/experimental/__p0009_bits/layout_stride.hpp:
+
+/usr/include/c++/11/bits/cxxabi_init_exception.h:
 
 _deps/kokkos-src/core/src/Kokkos_Rank.hpp:
 
@@ -1102,6 +1114,8 @@ _deps/kokkos-src/core/src/Kokkos_Rank.hpp:
 _deps/kokkos-src/containers/src/Kokkos_UnorderedMap.hpp:
 
 /usr/include/c++/11/bits/locale_classes.tcc:
+
+_deps/kokkos-src/core/src/Kokkos_Core.hpp:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h:
 
@@ -1123,6 +1137,8 @@ _deps/kokkos-src/core/src/Kokkos_Half.hpp:
 
 /usr/include/c++/11/chrono:
 
+_deps/kokkos-src/core/src/OpenMP/Kokkos_OpenMP_WorkGraphPolicy.hpp:
+
 _deps/kokkos-src/core/src/impl/Kokkos_Combined_Reducer.hpp:
 
 _deps/kokkos-src/core/src/Kokkos_Assert.hpp:
@@ -1137,16 +1153,6 @@ _deps/kokkos-src/core/src/impl/Kokkos_LIFO.hpp:
 
 _deps/kokkos-src/core/src/Kokkos_PointerOwnership.hpp:
 
-/usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h:
-
-_deps/kokkos-src/core/src/impl/Kokkos_ConcurrentBitset.hpp:
-
-_deps/kokkos-src/core/src/Kokkos_DetectionIdiom.hpp:
-
-_deps/kokkos-src/core/src/View/Hooks/Kokkos_ViewHooks.hpp:
-
-/usr/include/c++/11/bits/locale_facets_nonio.tcc:
-
 /usr/include/c++/11/bits/unique_ptr.h:
 
 _deps/kokkos-src/core/src/Kokkos_MathematicalConstants.hpp:
@@ -1160,12 +1166,6 @@ _deps/kokkos-src/core/src/impl/Kokkos_TaskQueueMultiple_impl.hpp:
 /usr/include/x86_64-linux-gnu/bits/local_lim.h:
 
 _deps/kokkos-src/tpls/mdspan/include/experimental/__p2630_bits/submdspan_mapping.hpp:
-
-/usr/include/c++/11/tr1/beta_function.tcc:
-
-/usr/include/c++/11/array:
-
-_deps/kokkos-src/core/src/Kokkos_Macros.hpp:
 
 /usr/include/c++/11/bits/basic_string.tcc:
 
@@ -1187,9 +1187,9 @@ _deps/kokkos-src/core/src/impl/Kokkos_HostSpace_deepcopy.hpp:
 
 _deps/kokkos-src/core/src/Kokkos_ScratchSpace.hpp:
 
-_deps/kokkos-src/core/src/impl/Kokkos_Error.hpp:
-
 _deps/kokkos-src/core/src/impl/Kokkos_SingleTaskQueue.hpp:
+
+_deps/kokkos-src/core/src/impl/Kokkos_Error.hpp:
 
 /usr/include/c++/11/bits/atomic_base.h:
 
@@ -1198,6 +1198,8 @@ _deps/kokkos-src/core/src/impl/Kokkos_SingleTaskQueue.hpp:
 _deps/kokkos-src/core/src/Kokkos_TaskScheduler.hpp:
 
 _deps/kokkos-src/core/src/Kokkos_MemoryTraits.hpp:
+
+_deps/kokkos-src/core/src/OpenMP/Kokkos_OpenMP_Parallel_Scan.hpp:
 
 _deps/kokkos-src/tpls/mdspan/include/experimental/__p2630_bits/submdspan.hpp:
 
@@ -1220,6 +1222,8 @@ _deps/kokkos-src/core/src/Kokkos_Vectorization.hpp:
 /usr/include/c++/11/bits/shared_ptr_base.h:
 
 /usr/include/c++/11/bits/basic_string.h:
+
+_deps/kokkos-src/core/src/impl/Kokkos_TaskPolicyData.hpp:
 
 _deps/kokkos-src/core/src/impl/Kokkos_TaskQueue.hpp:
 
@@ -1295,8 +1299,6 @@ _deps/kokkos-src/core/src/traits/Kokkos_Traits_fwd.hpp:
 
 /usr/include/c++/11/bits/stl_iterator_base_funcs.h:
 
-/usr/include/c++/11/bits/std_thread.h:
-
 /usr/include/c++/11/bits/cpp_type_traits.h:
 
 _deps/kokkos-src/tpls/desul/include/desul/atomics/Adapt_GCC.hpp:
@@ -1308,8 +1310,6 @@ _deps/kokkos-src/tpls/desul/include/desul/atomics/Atomic_Ref.hpp:
 _deps/kokkos-src/tpls/desul/include/desul/atomics/Common.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
-
-/usr/include/c++/11/bits/this_thread_sleep.h:
 
 /usr/include/c++/11/bits/locale_facets.tcc:
 
@@ -1359,10 +1359,6 @@ _deps/kokkos-src/tpls/mdspan/include/experimental/__p0009_bits/full_extent_t.hpp
 
 _deps/kokkos-src/tpls/mdspan/include/experimental/__p0009_bits/layout_left.hpp:
 
-_deps/kokkos-src/tpls/mdspan/include/experimental/__p0009_bits/layout_stride.hpp:
-
-/usr/include/c++/11/bits/cxxabi_init_exception.h:
-
 _deps/kokkos-src/core/src/Kokkos_MathematicalSpecialFunctions.hpp:
 
 _deps/kokkos-src/tpls/mdspan/include/experimental/__p0009_bits/macros.hpp:
@@ -1401,6 +1397,12 @@ _deps/kokkos-src/core/src/impl/Kokkos_EBO.hpp:
 
 /usr/include/asm-generic/errno.h:
 
+/usr/include/c++/11/tr1/beta_function.tcc:
+
+_deps/kokkos-src/core/src/Kokkos_Macros.hpp:
+
+/usr/include/c++/11/array:
+
 _deps/kokkos-src/tpls/mdspan/include/experimental/__p0009_bits/dynamic_extent.hpp:
 
 /usr/include/c++/11/backward/auto_ptr.h:
@@ -1408,8 +1410,6 @@ _deps/kokkos-src/tpls/mdspan/include/experimental/__p0009_bits/dynamic_extent.hp
 /usr/include/c++/11/pstl/execution_defs.h:
 
 /usr/include/c++/11/bits/algorithmfwd.h:
-
-_deps/kokkos-src/core/src/Serial/Kokkos_Serial_Parallel_Range.hpp:
 
 /usr/include/c++/11/bits/align.h:
 
@@ -1487,6 +1487,6 @@ _deps/kokkos-src/containers/src/Kokkos_Functional.hpp:
 
 /usr/include/c++/11/bits/predefined_ops.h:
 
-/usr/include/c++/11/bits/quoted_string.h:
+/usr/lib/gcc/x86_64-linux-gnu/11/include/omp.h:
 
 /usr/include/c++/11/bits/refwrap.h:

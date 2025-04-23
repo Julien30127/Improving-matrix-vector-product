@@ -6,5 +6,5 @@ CXX_DEFINES = -DKOKKOS_DEPENDENCE
 
 CXX_INCLUDES = -I/home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-build/containers/src -I/home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/containers/src -I/home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-build -I/home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-build/core/src -I/home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src -I/home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/tpls/desul/include -I/home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/tpls/mdspan/include
 
-CXX_FLAGS = -std=gnu++17
+CXX_FLAGS = -std=gnu++17 -fopenmp
 

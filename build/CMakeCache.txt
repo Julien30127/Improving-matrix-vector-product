@@ -572,8 +572,7 @@ Kokkos_ENABLE_OPENACC:BOOL=OFF
 //Whether to force to use host as a target device for OpenACC
 Kokkos_ENABLE_OPENACC_FORCE_HOST_AS_DEVICE:BOOL=OFF
 
-//Whether to build OpenMP backend
-Kokkos_ENABLE_OPENMP:BOOL=OFF
+Kokkos_ENABLE_OPENMP:BOOL=ON
 
 //Whether to build the OpenMP target backend
 Kokkos_ENABLE_OPENMPTARGET:BOOL=OFF
@@ -584,8 +583,7 @@ Kokkos_ENABLE_ROCM:BOOL=OFF
 //Whether to enable the ROCTHRUST library
 Kokkos_ENABLE_ROCTHRUST:BOOL=OFF
 
-//Whether to build serial backend
-Kokkos_ENABLE_SERIAL:BOOL=ON
+Kokkos_ENABLE_SERIAL:BOOL=OFF
 
 //Whether to build SYCL backend
 Kokkos_ENABLE_SYCL:BOOL=OFF
@@ -862,9 +860,9 @@ CTEST_SUBMIT_RETRY_DELAY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: DART_TESTING_TIMEOUT
 DART_TESTING_TIMEOUT-ADVANCED:INTERNAL=1
 //Details about finding OpenMP
-FIND_PACKAGE_MESSAGE_DETAILS_OpenMP:INTERNAL=[TRUE][ ][v4.5()]
+FIND_PACKAGE_MESSAGE_DETAILS_OpenMP:INTERNAL=[TRUE][found components: CXX ][v4.5(3.0)]
 //Details about finding OpenMP_CXX
-FIND_PACKAGE_MESSAGE_DETAILS_OpenMP_CXX:INTERNAL=[-fopenmp][/usr/lib/gcc/x86_64-linux-gnu/11/libgomp.so][/usr/lib/x86_64-linux-gnu/libpthread.a][v4.5()]
+FIND_PACKAGE_MESSAGE_DETAILS_OpenMP_CXX:INTERNAL=[-fopenmp][/usr/lib/gcc/x86_64-linux-gnu/11/libgomp.so][/usr/lib/x86_64-linux-gnu/libpthread.a][/usr/lib/gcc/x86_64-linux-gnu/11/libgomp.so][/usr/lib/x86_64-linux-gnu/libpthread.a][v4.5(3.0)]
 //Details about finding TPLLIBDL
 FIND_PACKAGE_MESSAGE_DETAILS_TPLLIBDL:INTERNAL=[/usr/include][/usr/lib/x86_64-linux-gnu/libdl.a][v()]
 //ADVANCED property for variable: GITCOMMAND

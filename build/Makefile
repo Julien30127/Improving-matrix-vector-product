@@ -604,17 +604,43 @@ fmt/fast:
 .PHONY : fmt/fast
 
 #=============================================================================
-# Target rules for targets named top.matrix_product
+# Target rules for targets named top.matrix_naive_left
 
 # Build rule for target.
-top.matrix_product: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 top.matrix_product
-.PHONY : top.matrix_product
+top.matrix_naive_left: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 top.matrix_naive_left
+.PHONY : top.matrix_naive_left
 
 # fast build rule for target.
-top.matrix_product/fast:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/top.matrix_product.dir/build.make src/CMakeFiles/top.matrix_product.dir/build
-.PHONY : top.matrix_product/fast
+top.matrix_naive_left/fast:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/top.matrix_naive_left.dir/build.make src/CMakeFiles/top.matrix_naive_left.dir/build
+.PHONY : top.matrix_naive_left/fast
+
+#=============================================================================
+# Target rules for targets named top.matrix_naive_right
+
+# Build rule for target.
+top.matrix_naive_right: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 top.matrix_naive_right
+.PHONY : top.matrix_naive_right
+
+# fast build rule for target.
+top.matrix_naive_right/fast:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/top.matrix_naive_right.dir/build.make src/CMakeFiles/top.matrix_naive_right.dir/build
+.PHONY : top.matrix_naive_right/fast
+
+#=============================================================================
+# Target rules for targets named top.matrix_blocked
+
+# Build rule for target.
+top.matrix_blocked: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 top.matrix_blocked
+.PHONY : top.matrix_blocked
+
+# fast build rule for target.
+top.matrix_blocked/fast:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/top.matrix_blocked.dir/build.make src/CMakeFiles/top.matrix_blocked.dir/build
+.PHONY : top.matrix_blocked/fast
 
 # Help Target
 help:
@@ -662,7 +688,9 @@ help:
 	@echo "... kokkoscontainers"
 	@echo "... kokkoscore"
 	@echo "... kokkossimd"
-	@echo "... top.matrix_product"
+	@echo "... top.matrix_blocked"
+	@echo "... top.matrix_naive_left"
+	@echo "... top.matrix_naive_right"
 .PHONY : help
 
 

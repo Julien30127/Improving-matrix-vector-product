@@ -1,0 +1,15 @@
+Threads,NaiveTime,GFLOPS,Layout
+1,236.587977,.1168,LayoutRight
+2,181.736891,.1521,LayoutRight
+4,105.481791,.2621,LayoutRight
+6,78.577228,.3518,LayoutRight
+8,67.247982,.4111,LayoutRight
+10,61.735274,.4478,LayoutRight
+12,71.581687,.3862,LayoutRight
+1,188.104117,.1469,LayoutLeft
+2,170.322252,.1623,LayoutLeft
+4,101.220298,.2731,LayoutLeft
+6,82.059524,.3369,LayoutLeft
+8,65.369612,.4229,LayoutLeft
+10,58.597119,.4718,LayoutLeft
+12,65.631599,.4212,LayoutLeft

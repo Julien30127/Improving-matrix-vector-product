@@ -162,42 +162,118 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-src/CMakeFiles/top.matrix_product.dir/rule:
-	cd /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/top.matrix_product.dir/rule
-.PHONY : src/CMakeFiles/top.matrix_product.dir/rule
+src/CMakeFiles/top.matrix_naive_left.dir/rule:
+	cd /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/top.matrix_naive_left.dir/rule
+.PHONY : src/CMakeFiles/top.matrix_naive_left.dir/rule
 
 # Convenience name for target.
-top.matrix_product: src/CMakeFiles/top.matrix_product.dir/rule
-.PHONY : top.matrix_product
+top.matrix_naive_left: src/CMakeFiles/top.matrix_naive_left.dir/rule
+.PHONY : top.matrix_naive_left
 
 # fast build rule for target.
-top.matrix_product/fast:
-	cd /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/top.matrix_product.dir/build.make src/CMakeFiles/top.matrix_product.dir/build
-.PHONY : top.matrix_product/fast
+top.matrix_naive_left/fast:
+	cd /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/top.matrix_naive_left.dir/build.make src/CMakeFiles/top.matrix_naive_left.dir/build
+.PHONY : top.matrix_naive_left/fast
 
-main.o: main.cpp.o
-.PHONY : main.o
+# Convenience name for target.
+src/CMakeFiles/top.matrix_naive_right.dir/rule:
+	cd /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/top.matrix_naive_right.dir/rule
+.PHONY : src/CMakeFiles/top.matrix_naive_right.dir/rule
+
+# Convenience name for target.
+top.matrix_naive_right: src/CMakeFiles/top.matrix_naive_right.dir/rule
+.PHONY : top.matrix_naive_right
+
+# fast build rule for target.
+top.matrix_naive_right/fast:
+	cd /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/top.matrix_naive_right.dir/build.make src/CMakeFiles/top.matrix_naive_right.dir/build
+.PHONY : top.matrix_naive_right/fast
+
+# Convenience name for target.
+src/CMakeFiles/top.matrix_blocked.dir/rule:
+	cd /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/top.matrix_blocked.dir/rule
+.PHONY : src/CMakeFiles/top.matrix_blocked.dir/rule
+
+# Convenience name for target.
+top.matrix_blocked: src/CMakeFiles/top.matrix_blocked.dir/rule
+.PHONY : top.matrix_blocked
+
+# fast build rule for target.
+top.matrix_blocked/fast:
+	cd /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/top.matrix_blocked.dir/build.make src/CMakeFiles/top.matrix_blocked.dir/build
+.PHONY : top.matrix_blocked/fast
+
+main_blocked.o: main_blocked.cpp.o
+.PHONY : main_blocked.o
 
 # target to build an object file
-main.cpp.o:
-	cd /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/top.matrix_product.dir/build.make src/CMakeFiles/top.matrix_product.dir/main.cpp.o
-.PHONY : main.cpp.o
+main_blocked.cpp.o:
+	cd /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/top.matrix_blocked.dir/build.make src/CMakeFiles/top.matrix_blocked.dir/main_blocked.cpp.o
+.PHONY : main_blocked.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+main_blocked.i: main_blocked.cpp.i
+.PHONY : main_blocked.i
 
 # target to preprocess a source file
-main.cpp.i:
-	cd /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/top.matrix_product.dir/build.make src/CMakeFiles/top.matrix_product.dir/main.cpp.i
-.PHONY : main.cpp.i
+main_blocked.cpp.i:
+	cd /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/top.matrix_blocked.dir/build.make src/CMakeFiles/top.matrix_blocked.dir/main_blocked.cpp.i
+.PHONY : main_blocked.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+main_blocked.s: main_blocked.cpp.s
+.PHONY : main_blocked.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	cd /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/top.matrix_product.dir/build.make src/CMakeFiles/top.matrix_product.dir/main.cpp.s
-.PHONY : main.cpp.s
+main_blocked.cpp.s:
+	cd /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/top.matrix_blocked.dir/build.make src/CMakeFiles/top.matrix_blocked.dir/main_blocked.cpp.s
+.PHONY : main_blocked.cpp.s
+
+main_naive_left.o: main_naive_left.cpp.o
+.PHONY : main_naive_left.o
+
+# target to build an object file
+main_naive_left.cpp.o:
+	cd /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/top.matrix_naive_left.dir/build.make src/CMakeFiles/top.matrix_naive_left.dir/main_naive_left.cpp.o
+.PHONY : main_naive_left.cpp.o
+
+main_naive_left.i: main_naive_left.cpp.i
+.PHONY : main_naive_left.i
+
+# target to preprocess a source file
+main_naive_left.cpp.i:
+	cd /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/top.matrix_naive_left.dir/build.make src/CMakeFiles/top.matrix_naive_left.dir/main_naive_left.cpp.i
+.PHONY : main_naive_left.cpp.i
+
+main_naive_left.s: main_naive_left.cpp.s
+.PHONY : main_naive_left.s
+
+# target to generate assembly for a file
+main_naive_left.cpp.s:
+	cd /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/top.matrix_naive_left.dir/build.make src/CMakeFiles/top.matrix_naive_left.dir/main_naive_left.cpp.s
+.PHONY : main_naive_left.cpp.s
+
+main_naive_right.o: main_naive_right.cpp.o
+.PHONY : main_naive_right.o
+
+# target to build an object file
+main_naive_right.cpp.o:
+	cd /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/top.matrix_naive_right.dir/build.make src/CMakeFiles/top.matrix_naive_right.dir/main_naive_right.cpp.o
+.PHONY : main_naive_right.cpp.o
+
+main_naive_right.i: main_naive_right.cpp.i
+.PHONY : main_naive_right.i
+
+# target to preprocess a source file
+main_naive_right.cpp.i:
+	cd /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/top.matrix_naive_right.dir/build.make src/CMakeFiles/top.matrix_naive_right.dir/main_naive_right.cpp.i
+.PHONY : main_naive_right.cpp.i
+
+main_naive_right.s: main_naive_right.cpp.s
+.PHONY : main_naive_right.s
+
+# target to generate assembly for a file
+main_naive_right.cpp.s:
+	cd /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/top.matrix_naive_right.dir/build.make src/CMakeFiles/top.matrix_naive_right.dir/main_naive_right.cpp.s
+.PHONY : main_naive_right.cpp.s
 
 # Help Target
 help:
@@ -211,10 +287,18 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... top.matrix_product"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... top.matrix_blocked"
+	@echo "... top.matrix_naive_left"
+	@echo "... top.matrix_naive_right"
+	@echo "... main_blocked.o"
+	@echo "... main_blocked.i"
+	@echo "... main_blocked.s"
+	@echo "... main_naive_left.o"
+	@echo "... main_naive_left.i"
+	@echo "... main_naive_left.s"
+	@echo "... main_naive_right.o"
+	@echo "... main_naive_right.i"
+	@echo "... main_naive_right.s"
 .PHONY : help
 
 

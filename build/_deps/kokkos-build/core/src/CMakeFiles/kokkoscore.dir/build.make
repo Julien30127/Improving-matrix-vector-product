@@ -282,33 +282,47 @@ _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/impl/Kokkos_hwloc.cpp.s: c
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kokkoscore.dir/impl/Kokkos_hwloc.cpp.s"
 	cd /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-build/core/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/impl/Kokkos_hwloc.cpp -o CMakeFiles/kokkoscore.dir/impl/Kokkos_hwloc.cpp.s
 
-_deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/Serial/Kokkos_Serial.cpp.o: _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/flags.make
-_deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/Serial/Kokkos_Serial.cpp.o: _deps/kokkos-src/core/src/Serial/Kokkos_Serial.cpp
-_deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/Serial/Kokkos_Serial.cpp.o: _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/Serial/Kokkos_Serial.cpp.o"
-	cd /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-build/core/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/Serial/Kokkos_Serial.cpp.o -MF CMakeFiles/kokkoscore.dir/Serial/Kokkos_Serial.cpp.o.d -o CMakeFiles/kokkoscore.dir/Serial/Kokkos_Serial.cpp.o -c /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/Serial/Kokkos_Serial.cpp
+_deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/OpenMP/Kokkos_OpenMP.cpp.o: _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/flags.make
+_deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/OpenMP/Kokkos_OpenMP.cpp.o: _deps/kokkos-src/core/src/OpenMP/Kokkos_OpenMP.cpp
+_deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/OpenMP/Kokkos_OpenMP.cpp.o: _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/OpenMP/Kokkos_OpenMP.cpp.o"
+	cd /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-build/core/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/OpenMP/Kokkos_OpenMP.cpp.o -MF CMakeFiles/kokkoscore.dir/OpenMP/Kokkos_OpenMP.cpp.o.d -o CMakeFiles/kokkoscore.dir/OpenMP/Kokkos_OpenMP.cpp.o -c /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/OpenMP/Kokkos_OpenMP.cpp
 
-_deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/Serial/Kokkos_Serial.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kokkoscore.dir/Serial/Kokkos_Serial.cpp.i"
-	cd /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-build/core/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/Serial/Kokkos_Serial.cpp > CMakeFiles/kokkoscore.dir/Serial/Kokkos_Serial.cpp.i
+_deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/OpenMP/Kokkos_OpenMP.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kokkoscore.dir/OpenMP/Kokkos_OpenMP.cpp.i"
+	cd /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-build/core/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/OpenMP/Kokkos_OpenMP.cpp > CMakeFiles/kokkoscore.dir/OpenMP/Kokkos_OpenMP.cpp.i
 
-_deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/Serial/Kokkos_Serial.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kokkoscore.dir/Serial/Kokkos_Serial.cpp.s"
-	cd /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-build/core/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/Serial/Kokkos_Serial.cpp -o CMakeFiles/kokkoscore.dir/Serial/Kokkos_Serial.cpp.s
+_deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/OpenMP/Kokkos_OpenMP.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kokkoscore.dir/OpenMP/Kokkos_OpenMP.cpp.s"
+	cd /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-build/core/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/OpenMP/Kokkos_OpenMP.cpp -o CMakeFiles/kokkoscore.dir/OpenMP/Kokkos_OpenMP.cpp.s
 
-_deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/Serial/Kokkos_Serial_Task.cpp.o: _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/flags.make
-_deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/Serial/Kokkos_Serial_Task.cpp.o: _deps/kokkos-src/core/src/Serial/Kokkos_Serial_Task.cpp
-_deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/Serial/Kokkos_Serial_Task.cpp.o: _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/Serial/Kokkos_Serial_Task.cpp.o"
-	cd /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-build/core/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/Serial/Kokkos_Serial_Task.cpp.o -MF CMakeFiles/kokkoscore.dir/Serial/Kokkos_Serial_Task.cpp.o.d -o CMakeFiles/kokkoscore.dir/Serial/Kokkos_Serial_Task.cpp.o -c /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/Serial/Kokkos_Serial_Task.cpp
+_deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/OpenMP/Kokkos_OpenMP_Instance.cpp.o: _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/flags.make
+_deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/OpenMP/Kokkos_OpenMP_Instance.cpp.o: _deps/kokkos-src/core/src/OpenMP/Kokkos_OpenMP_Instance.cpp
+_deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/OpenMP/Kokkos_OpenMP_Instance.cpp.o: _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/OpenMP/Kokkos_OpenMP_Instance.cpp.o"
+	cd /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-build/core/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/OpenMP/Kokkos_OpenMP_Instance.cpp.o -MF CMakeFiles/kokkoscore.dir/OpenMP/Kokkos_OpenMP_Instance.cpp.o.d -o CMakeFiles/kokkoscore.dir/OpenMP/Kokkos_OpenMP_Instance.cpp.o -c /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/OpenMP/Kokkos_OpenMP_Instance.cpp
 
-_deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/Serial/Kokkos_Serial_Task.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kokkoscore.dir/Serial/Kokkos_Serial_Task.cpp.i"
-	cd /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-build/core/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/Serial/Kokkos_Serial_Task.cpp > CMakeFiles/kokkoscore.dir/Serial/Kokkos_Serial_Task.cpp.i
+_deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/OpenMP/Kokkos_OpenMP_Instance.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kokkoscore.dir/OpenMP/Kokkos_OpenMP_Instance.cpp.i"
+	cd /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-build/core/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/OpenMP/Kokkos_OpenMP_Instance.cpp > CMakeFiles/kokkoscore.dir/OpenMP/Kokkos_OpenMP_Instance.cpp.i
 
-_deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/Serial/Kokkos_Serial_Task.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kokkoscore.dir/Serial/Kokkos_Serial_Task.cpp.s"
-	cd /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-build/core/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/Serial/Kokkos_Serial_Task.cpp -o CMakeFiles/kokkoscore.dir/Serial/Kokkos_Serial_Task.cpp.s
+_deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/OpenMP/Kokkos_OpenMP_Instance.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kokkoscore.dir/OpenMP/Kokkos_OpenMP_Instance.cpp.s"
+	cd /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-build/core/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/OpenMP/Kokkos_OpenMP_Instance.cpp -o CMakeFiles/kokkoscore.dir/OpenMP/Kokkos_OpenMP_Instance.cpp.s
+
+_deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/OpenMP/Kokkos_OpenMP_Task.cpp.o: _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/flags.make
+_deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/OpenMP/Kokkos_OpenMP_Task.cpp.o: _deps/kokkos-src/core/src/OpenMP/Kokkos_OpenMP_Task.cpp
+_deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/OpenMP/Kokkos_OpenMP_Task.cpp.o: _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/OpenMP/Kokkos_OpenMP_Task.cpp.o"
+	cd /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-build/core/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/OpenMP/Kokkos_OpenMP_Task.cpp.o -MF CMakeFiles/kokkoscore.dir/OpenMP/Kokkos_OpenMP_Task.cpp.o.d -o CMakeFiles/kokkoscore.dir/OpenMP/Kokkos_OpenMP_Task.cpp.o -c /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/OpenMP/Kokkos_OpenMP_Task.cpp
+
+_deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/OpenMP/Kokkos_OpenMP_Task.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kokkoscore.dir/OpenMP/Kokkos_OpenMP_Task.cpp.i"
+	cd /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-build/core/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/OpenMP/Kokkos_OpenMP_Task.cpp > CMakeFiles/kokkoscore.dir/OpenMP/Kokkos_OpenMP_Task.cpp.i
+
+_deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/OpenMP/Kokkos_OpenMP_Task.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kokkoscore.dir/OpenMP/Kokkos_OpenMP_Task.cpp.s"
+	cd /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-build/core/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/OpenMP/Kokkos_OpenMP_Task.cpp -o CMakeFiles/kokkoscore.dir/OpenMP/Kokkos_OpenMP_Task.cpp.s
 
 # Object files for target kokkoscore
 kokkoscore_OBJECTS = \
@@ -327,8 +341,9 @@ kokkoscore_OBJECTS = \
 "CMakeFiles/kokkoscore.dir/impl/Kokkos_SharedAlloc.cpp.o" \
 "CMakeFiles/kokkoscore.dir/impl/Kokkos_Stacktrace.cpp.o" \
 "CMakeFiles/kokkoscore.dir/impl/Kokkos_hwloc.cpp.o" \
-"CMakeFiles/kokkoscore.dir/Serial/Kokkos_Serial.cpp.o" \
-"CMakeFiles/kokkoscore.dir/Serial/Kokkos_Serial_Task.cpp.o"
+"CMakeFiles/kokkoscore.dir/OpenMP/Kokkos_OpenMP.cpp.o" \
+"CMakeFiles/kokkoscore.dir/OpenMP/Kokkos_OpenMP_Instance.cpp.o" \
+"CMakeFiles/kokkoscore.dir/OpenMP/Kokkos_OpenMP_Task.cpp.o"
 
 # External object files for target kokkoscore
 kokkoscore_EXTERNAL_OBJECTS =
@@ -348,11 +363,12 @@ _deps/kokkos-build/core/src/libkokkoscore.a: _deps/kokkos-build/core/src/CMakeFi
 _deps/kokkos-build/core/src/libkokkoscore.a: _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/impl/Kokkos_SharedAlloc.cpp.o
 _deps/kokkos-build/core/src/libkokkoscore.a: _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/impl/Kokkos_Stacktrace.cpp.o
 _deps/kokkos-build/core/src/libkokkoscore.a: _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/impl/Kokkos_hwloc.cpp.o
-_deps/kokkos-build/core/src/libkokkoscore.a: _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/Serial/Kokkos_Serial.cpp.o
-_deps/kokkos-build/core/src/libkokkoscore.a: _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/Serial/Kokkos_Serial_Task.cpp.o
+_deps/kokkos-build/core/src/libkokkoscore.a: _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/OpenMP/Kokkos_OpenMP.cpp.o
+_deps/kokkos-build/core/src/libkokkoscore.a: _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/OpenMP/Kokkos_OpenMP_Instance.cpp.o
+_deps/kokkos-build/core/src/libkokkoscore.a: _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/OpenMP/Kokkos_OpenMP_Task.cpp.o
 _deps/kokkos-build/core/src/libkokkoscore.a: _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/build.make
 _deps/kokkos-build/core/src/libkokkoscore.a: _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX static library libkokkoscore.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Linking CXX static library libkokkoscore.a"
 	cd /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-build/core/src && $(CMAKE_COMMAND) -P CMakeFiles/kokkoscore.dir/cmake_clean_target.cmake
 	cd /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-build/core/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/kokkoscore.dir/link.txt --verbose=$(VERBOSE)
 

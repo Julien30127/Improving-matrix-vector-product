@@ -1,12 +1,20 @@
-add_executable(top.matrix_product)
-target_sources(top.matrix_product PRIVATE main.cpp)
+# === EXÉCUTABLE NAIVE LEFT ===
+add_executable(top.matrix_naive_left main_naive_left.cpp)
 
-target_compile_options(top.matrix_product PRIVATE -Wall -Wextra -Wpedantic)
-target_compile_features(top.matrix_product PRIVATE cxx_std_17)  # Ajoute ça si ce n’est pas déjà forcé par Kokkos
+# Lier les bibliothèques nécessaires pour top.matrix_naive_left
+target_compile_options(top.matrix_naive_left PRIVATE -Wall -Wextra -Wpedantic)
+target_link_libraries(top.matrix_naive_left PRIVATE Kokkos::kokkos fmt::fmt OpenMP::OpenMP_CXX)
 
-target_link_libraries(top.matrix_product
-  PRIVATE
-    Kokkos::kokkos
-    fmt::fmt
-    OpenMP::OpenMP_CXX          # <-- Ajoute ça pour gérer OMP_NUM_THREADS
-)
+# === EXÉCUTABLE NAIVE RIGHT ===
+add_executable(top.matrix_naive_right main_naive_right.cpp)
+
+# Lier les bibliothèques nécessaires pour top.matrix_naive_right
+target_compile_options(top.matrix_naive_right PRIVATE -Wall -Wextra -Wpedantic)
+target_link_libraries(top.matrix_naive_right PRIVATE Kokkos::kokkos fmt::fmt OpenMP::OpenMP_CXX)
+
+# === EXÉCUTABLE BLOCKED ===
+add_executable(top.matrix_blocked main_blocked.cpp)
+
+# Lier les bibliothèques nécessaires pour top.matrix_blocked
+target_compile_options(top.matrix_blocked PRIVATE -Wall -Wextra -Wpedantic)
+target_link_libraries(top.matrix_blocked PRIVATE Kokkos::kokkos fmt::fmt OpenMP::OpenMP_CXX)

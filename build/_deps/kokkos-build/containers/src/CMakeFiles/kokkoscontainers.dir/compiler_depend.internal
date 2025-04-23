@@ -64,15 +64,16 @@ _deps/kokkos-build/containers/src/CMakeFiles/kokkoscontainers.dir/impl/Kokkos_Un
  /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/Kokkos_View.hpp
  /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/Kokkos_WorkGraphPolicy.hpp
  /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/Kokkos_hwloc.hpp
- /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/Serial/Kokkos_Serial.hpp
- /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/Serial/Kokkos_Serial_MDRangePolicy.hpp
- /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/Serial/Kokkos_Serial_Parallel_MDRange.hpp
- /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/Serial/Kokkos_Serial_Parallel_Range.hpp
- /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/Serial/Kokkos_Serial_Parallel_Team.hpp
- /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/Serial/Kokkos_Serial_Task.hpp
- /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/Serial/Kokkos_Serial_UniqueToken.hpp
- /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/Serial/Kokkos_Serial_WorkGraphPolicy.hpp
- /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/Serial/Kokkos_Serial_ZeroMemset.hpp
+ /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/OpenMP/Kokkos_OpenMP.hpp
+ /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/OpenMP/Kokkos_OpenMP_Instance.hpp
+ /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/OpenMP/Kokkos_OpenMP_MDRangePolicy.hpp
+ /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/OpenMP/Kokkos_OpenMP_Parallel_For.hpp
+ /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/OpenMP/Kokkos_OpenMP_Parallel_Reduce.hpp
+ /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/OpenMP/Kokkos_OpenMP_Parallel_Scan.hpp
+ /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/OpenMP/Kokkos_OpenMP_Task.hpp
+ /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/OpenMP/Kokkos_OpenMP_Team.hpp
+ /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/OpenMP/Kokkos_OpenMP_UniqueToken.hpp
+ /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/OpenMP/Kokkos_OpenMP_WorkGraphPolicy.hpp
  /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/View/Hooks/Kokkos_ViewHooks.hpp
  /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/View/Kokkos_BasicView.hpp
  /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/View/Kokkos_ViewAccessPreconditionsCheck.hpp
@@ -90,8 +91,8 @@ _deps/kokkos-build/containers/src/CMakeFiles/kokkoscontainers.dir/impl/Kokkos_Un
  /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/View/MDSpan/Kokkos_MDSpan_Extents.hpp
  /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/View/MDSpan/Kokkos_MDSpan_Header.hpp
  /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/View/MDSpan/Kokkos_MDSpan_Layout.hpp
- /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/decl/Kokkos_Declare_SERIAL.hpp
- /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/fwd/Kokkos_Fwd_SERIAL.hpp
+ /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/decl/Kokkos_Declare_OPENMP.hpp
+ /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/fwd/Kokkos_Fwd_OPENMP.hpp
  /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/impl/KokkosExp_Host_IterateTile.hpp
  /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/impl/Kokkos_AnalyzePolicy.hpp
  /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src/impl/Kokkos_BitOps.hpp
@@ -266,7 +267,6 @@ _deps/kokkos-build/containers/src/CMakeFiles/kokkoscontainers.dir/impl/Kokkos_Un
  /usr/include/c++/11/bits/std_abs.h
  /usr/include/c++/11/bits/std_function.h
  /usr/include/c++/11/bits/std_mutex.h
- /usr/include/c++/11/bits/std_thread.h
  /usr/include/c++/11/bits/stl_algo.h
  /usr/include/c++/11/bits/stl_algobase.h
  /usr/include/c++/11/bits/stl_bvector.h
@@ -278,6 +278,7 @@ _deps/kokkos-build/containers/src/CMakeFiles/kokkoscontainers.dir/impl/Kokkos_Un
  /usr/include/c++/11/bits/stl_iterator_base_types.h
  /usr/include/c++/11/bits/stl_map.h
  /usr/include/c++/11/bits/stl_multimap.h
+ /usr/include/c++/11/bits/stl_numeric.h
  /usr/include/c++/11/bits/stl_pair.h
  /usr/include/c++/11/bits/stl_raw_storage_iter.h
  /usr/include/c++/11/bits/stl_relops.h
@@ -285,12 +286,10 @@ _deps/kokkos-build/containers/src/CMakeFiles/kokkoscontainers.dir/impl/Kokkos_Un
  /usr/include/c++/11/bits/stl_tree.h
  /usr/include/c++/11/bits/stl_uninitialized.h
  /usr/include/c++/11/bits/stl_vector.h
- /usr/include/c++/11/bits/stream_iterator.h
  /usr/include/c++/11/bits/streambuf.tcc
  /usr/include/c++/11/bits/streambuf_iterator.h
  /usr/include/c++/11/bits/string_view.tcc
  /usr/include/c++/11/bits/stringfwd.h
- /usr/include/c++/11/bits/this_thread_sleep.h
  /usr/include/c++/11/bits/uniform_int_dist.h
  /usr/include/c++/11/bits/unique_lock.h
  /usr/include/c++/11/bits/unique_ptr.h
@@ -332,18 +331,19 @@ _deps/kokkos-build/containers/src/CMakeFiles/kokkoscontainers.dir/impl/Kokkos_Un
  /usr/include/c++/11/ios
  /usr/include/c++/11/iosfwd
  /usr/include/c++/11/istream
- /usr/include/c++/11/iterator
  /usr/include/c++/11/limits
  /usr/include/c++/11/locale
  /usr/include/c++/11/map
  /usr/include/c++/11/memory
  /usr/include/c++/11/mutex
  /usr/include/c++/11/new
+ /usr/include/c++/11/numeric
  /usr/include/c++/11/optional
  /usr/include/c++/11/ostream
  /usr/include/c++/11/pstl/execution_defs.h
  /usr/include/c++/11/pstl/glue_algorithm_defs.h
  /usr/include/c++/11/pstl/glue_memory_defs.h
+ /usr/include/c++/11/pstl/glue_numeric_defs.h
  /usr/include/c++/11/pstl/pstl_config.h
  /usr/include/c++/11/ratio
  /usr/include/c++/11/sstream
@@ -352,7 +352,6 @@ _deps/kokkos-build/containers/src/CMakeFiles/kokkoscontainers.dir/impl/Kokkos_Un
  /usr/include/c++/11/string
  /usr/include/c++/11/string_view
  /usr/include/c++/11/system_error
- /usr/include/c++/11/thread
  /usr/include/c++/11/tr1/bessel_function.tcc
  /usr/include/c++/11/tr1/beta_function.tcc
  /usr/include/c++/11/tr1/ell_integral.tcc
@@ -494,6 +493,7 @@ _deps/kokkos-build/containers/src/CMakeFiles/kokkoscontainers.dir/impl/Kokkos_Un
  /usr/include/x86_64-linux-gnu/sys/types.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/omp.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h

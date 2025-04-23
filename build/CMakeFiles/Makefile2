@@ -370,11 +370,15 @@ _deps/kokkos-build/simd/src/clean: _deps/kokkos-build/simd/src/CMakeFiles/kokkos
 # Directory level rules for directory src
 
 # Recursive "all" directory target.
-src/all: src/CMakeFiles/top.matrix_product.dir/all
+src/all: src/CMakeFiles/top.matrix_naive_left.dir/all
+src/all: src/CMakeFiles/top.matrix_naive_right.dir/all
+src/all: src/CMakeFiles/top.matrix_blocked.dir/all
 .PHONY : src/all
 
 # Recursive "codegen" directory target.
-src/codegen: src/CMakeFiles/top.matrix_product.dir/codegen
+src/codegen: src/CMakeFiles/top.matrix_naive_left.dir/codegen
+src/codegen: src/CMakeFiles/top.matrix_naive_right.dir/codegen
+src/codegen: src/CMakeFiles/top.matrix_blocked.dir/codegen
 .PHONY : src/codegen
 
 # Recursive "preinstall" directory target.
@@ -382,7 +386,9 @@ src/preinstall:
 .PHONY : src/preinstall
 
 # Recursive "clean" directory target.
-src/clean: src/CMakeFiles/top.matrix_product.dir/clean
+src/clean: src/CMakeFiles/top.matrix_naive_left.dir/clean
+src/clean: src/CMakeFiles/top.matrix_naive_right.dir/clean
+src/clean: src/CMakeFiles/top.matrix_blocked.dir/clean
 .PHONY : src/clean
 
 #=============================================================================
@@ -1352,12 +1358,12 @@ _deps/kokkos-build/CMakeFiles/impl_git_version.dir/clean:
 _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/all:
 	$(MAKE) $(MAKESILENT) -f _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/build.make _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/build.make _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/CMakeFiles --progress-num=8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25 "Built target kokkoscore"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/CMakeFiles --progress-num=8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26 "Built target kokkoscore"
 .PHONY : _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/CMakeFiles 18
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/CMakeFiles 19
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/CMakeFiles 0
 .PHONY : _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/rule
@@ -1369,7 +1375,7 @@ kokkoscore: _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/rule
 # codegen rule for target.
 _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/build.make _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/CMakeFiles --progress-num=8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25 "Finished codegen for target kokkoscore"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/CMakeFiles --progress-num=8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26 "Finished codegen for target kokkoscore"
 .PHONY : _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/codegen
 
 # clean rule for target.
@@ -1389,7 +1395,7 @@ _deps/kokkos-build/containers/src/CMakeFiles/kokkoscontainers.dir/all: _deps/kok
 
 # Build rule for subdir invocation for target.
 _deps/kokkos-build/containers/src/CMakeFiles/kokkoscontainers.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/CMakeFiles 20
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/CMakeFiles 21
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/kokkos-build/containers/src/CMakeFiles/kokkoscontainers.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/CMakeFiles 0
 .PHONY : _deps/kokkos-build/containers/src/CMakeFiles/kokkoscontainers.dir/rule
@@ -1416,7 +1422,7 @@ _deps/kokkos-build/containers/src/CMakeFiles/kokkoscontainers.dir/clean:
 _deps/kokkos-build/simd/src/CMakeFiles/kokkossimd.dir/all:
 	$(MAKE) $(MAKESILENT) -f _deps/kokkos-build/simd/src/CMakeFiles/kokkossimd.dir/build.make _deps/kokkos-build/simd/src/CMakeFiles/kokkossimd.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/kokkos-build/simd/src/CMakeFiles/kokkossimd.dir/build.make _deps/kokkos-build/simd/src/CMakeFiles/kokkossimd.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/CMakeFiles --progress-num=26,27 "Built target kokkossimd"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/CMakeFiles --progress-num=27,28 "Built target kokkossimd"
 .PHONY : _deps/kokkos-build/simd/src/CMakeFiles/kokkossimd.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1433,7 +1439,7 @@ kokkossimd: _deps/kokkos-build/simd/src/CMakeFiles/kokkossimd.dir/rule
 # codegen rule for target.
 _deps/kokkos-build/simd/src/CMakeFiles/kokkossimd.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f _deps/kokkos-build/simd/src/CMakeFiles/kokkossimd.dir/build.make _deps/kokkos-build/simd/src/CMakeFiles/kokkossimd.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/CMakeFiles --progress-num=26,27 "Finished codegen for target kokkossimd"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/CMakeFiles --progress-num=27,28 "Finished codegen for target kokkossimd"
 .PHONY : _deps/kokkos-build/simd/src/CMakeFiles/kokkossimd.dir/codegen
 
 # clean rule for target.
@@ -1474,39 +1480,109 @@ _deps/fmt-build/CMakeFiles/fmt.dir/clean:
 .PHONY : _deps/fmt-build/CMakeFiles/fmt.dir/clean
 
 #=============================================================================
-# Target rules for target src/CMakeFiles/top.matrix_product.dir
+# Target rules for target src/CMakeFiles/top.matrix_naive_left.dir
 
 # All Build rule for target.
-src/CMakeFiles/top.matrix_product.dir/all: _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/all
-src/CMakeFiles/top.matrix_product.dir/all: _deps/kokkos-build/containers/src/CMakeFiles/kokkoscontainers.dir/all
-src/CMakeFiles/top.matrix_product.dir/all: _deps/kokkos-build/simd/src/CMakeFiles/kokkossimd.dir/all
-src/CMakeFiles/top.matrix_product.dir/all: _deps/fmt-build/CMakeFiles/fmt.dir/all
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/top.matrix_product.dir/build.make src/CMakeFiles/top.matrix_product.dir/depend
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/top.matrix_product.dir/build.make src/CMakeFiles/top.matrix_product.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/CMakeFiles --progress-num=28,29 "Built target top.matrix_product"
-.PHONY : src/CMakeFiles/top.matrix_product.dir/all
+src/CMakeFiles/top.matrix_naive_left.dir/all: _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/all
+src/CMakeFiles/top.matrix_naive_left.dir/all: _deps/kokkos-build/containers/src/CMakeFiles/kokkoscontainers.dir/all
+src/CMakeFiles/top.matrix_naive_left.dir/all: _deps/kokkos-build/simd/src/CMakeFiles/kokkossimd.dir/all
+src/CMakeFiles/top.matrix_naive_left.dir/all: _deps/fmt-build/CMakeFiles/fmt.dir/all
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/top.matrix_naive_left.dir/build.make src/CMakeFiles/top.matrix_naive_left.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/top.matrix_naive_left.dir/build.make src/CMakeFiles/top.matrix_naive_left.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/CMakeFiles --progress-num=31,32 "Built target top.matrix_naive_left"
+.PHONY : src/CMakeFiles/top.matrix_naive_left.dir/all
 
 # Build rule for subdir invocation for target.
-src/CMakeFiles/top.matrix_product.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/CMakeFiles 27
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/top.matrix_product.dir/all
+src/CMakeFiles/top.matrix_naive_left.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/CMakeFiles 28
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/top.matrix_naive_left.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/CMakeFiles 0
-.PHONY : src/CMakeFiles/top.matrix_product.dir/rule
+.PHONY : src/CMakeFiles/top.matrix_naive_left.dir/rule
 
 # Convenience name for target.
-top.matrix_product: src/CMakeFiles/top.matrix_product.dir/rule
-.PHONY : top.matrix_product
+top.matrix_naive_left: src/CMakeFiles/top.matrix_naive_left.dir/rule
+.PHONY : top.matrix_naive_left
 
 # codegen rule for target.
-src/CMakeFiles/top.matrix_product.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/top.matrix_product.dir/build.make src/CMakeFiles/top.matrix_product.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/CMakeFiles --progress-num=28,29 "Finished codegen for target top.matrix_product"
-.PHONY : src/CMakeFiles/top.matrix_product.dir/codegen
+src/CMakeFiles/top.matrix_naive_left.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/top.matrix_naive_left.dir/build.make src/CMakeFiles/top.matrix_naive_left.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/CMakeFiles --progress-num=31,32 "Finished codegen for target top.matrix_naive_left"
+.PHONY : src/CMakeFiles/top.matrix_naive_left.dir/codegen
 
 # clean rule for target.
-src/CMakeFiles/top.matrix_product.dir/clean:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/top.matrix_product.dir/build.make src/CMakeFiles/top.matrix_product.dir/clean
-.PHONY : src/CMakeFiles/top.matrix_product.dir/clean
+src/CMakeFiles/top.matrix_naive_left.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/top.matrix_naive_left.dir/build.make src/CMakeFiles/top.matrix_naive_left.dir/clean
+.PHONY : src/CMakeFiles/top.matrix_naive_left.dir/clean
+
+#=============================================================================
+# Target rules for target src/CMakeFiles/top.matrix_naive_right.dir
+
+# All Build rule for target.
+src/CMakeFiles/top.matrix_naive_right.dir/all: _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/all
+src/CMakeFiles/top.matrix_naive_right.dir/all: _deps/kokkos-build/containers/src/CMakeFiles/kokkoscontainers.dir/all
+src/CMakeFiles/top.matrix_naive_right.dir/all: _deps/kokkos-build/simd/src/CMakeFiles/kokkossimd.dir/all
+src/CMakeFiles/top.matrix_naive_right.dir/all: _deps/fmt-build/CMakeFiles/fmt.dir/all
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/top.matrix_naive_right.dir/build.make src/CMakeFiles/top.matrix_naive_right.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/top.matrix_naive_right.dir/build.make src/CMakeFiles/top.matrix_naive_right.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/CMakeFiles --progress-num=33,34 "Built target top.matrix_naive_right"
+.PHONY : src/CMakeFiles/top.matrix_naive_right.dir/all
+
+# Build rule for subdir invocation for target.
+src/CMakeFiles/top.matrix_naive_right.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/CMakeFiles 28
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/top.matrix_naive_right.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/CMakeFiles 0
+.PHONY : src/CMakeFiles/top.matrix_naive_right.dir/rule
+
+# Convenience name for target.
+top.matrix_naive_right: src/CMakeFiles/top.matrix_naive_right.dir/rule
+.PHONY : top.matrix_naive_right
+
+# codegen rule for target.
+src/CMakeFiles/top.matrix_naive_right.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/top.matrix_naive_right.dir/build.make src/CMakeFiles/top.matrix_naive_right.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/CMakeFiles --progress-num=33,34 "Finished codegen for target top.matrix_naive_right"
+.PHONY : src/CMakeFiles/top.matrix_naive_right.dir/codegen
+
+# clean rule for target.
+src/CMakeFiles/top.matrix_naive_right.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/top.matrix_naive_right.dir/build.make src/CMakeFiles/top.matrix_naive_right.dir/clean
+.PHONY : src/CMakeFiles/top.matrix_naive_right.dir/clean
+
+#=============================================================================
+# Target rules for target src/CMakeFiles/top.matrix_blocked.dir
+
+# All Build rule for target.
+src/CMakeFiles/top.matrix_blocked.dir/all: _deps/kokkos-build/core/src/CMakeFiles/kokkoscore.dir/all
+src/CMakeFiles/top.matrix_blocked.dir/all: _deps/kokkos-build/containers/src/CMakeFiles/kokkoscontainers.dir/all
+src/CMakeFiles/top.matrix_blocked.dir/all: _deps/kokkos-build/simd/src/CMakeFiles/kokkossimd.dir/all
+src/CMakeFiles/top.matrix_blocked.dir/all: _deps/fmt-build/CMakeFiles/fmt.dir/all
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/top.matrix_blocked.dir/build.make src/CMakeFiles/top.matrix_blocked.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/top.matrix_blocked.dir/build.make src/CMakeFiles/top.matrix_blocked.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/CMakeFiles --progress-num=29,30 "Built target top.matrix_blocked"
+.PHONY : src/CMakeFiles/top.matrix_blocked.dir/all
+
+# Build rule for subdir invocation for target.
+src/CMakeFiles/top.matrix_blocked.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/CMakeFiles 28
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/top.matrix_blocked.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/CMakeFiles 0
+.PHONY : src/CMakeFiles/top.matrix_blocked.dir/rule
+
+# Convenience name for target.
+top.matrix_blocked: src/CMakeFiles/top.matrix_blocked.dir/rule
+.PHONY : top.matrix_blocked
+
+# codegen rule for target.
+src/CMakeFiles/top.matrix_blocked.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/top.matrix_blocked.dir/build.make src/CMakeFiles/top.matrix_blocked.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/CMakeFiles --progress-num=29,30 "Finished codegen for target top.matrix_blocked"
+.PHONY : src/CMakeFiles/top.matrix_blocked.dir/codegen
+
+# clean rule for target.
+src/CMakeFiles/top.matrix_blocked.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/top.matrix_blocked.dir/build.make src/CMakeFiles/top.matrix_blocked.dir/clean
+.PHONY : src/CMakeFiles/top.matrix_blocked.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

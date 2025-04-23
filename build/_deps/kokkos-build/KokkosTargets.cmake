@@ -62,7 +62,7 @@ set_target_properties(Kokkos::kokkoscore PROPERTIES
   INTERFACE_COMPILE_FEATURES "cxx_std_17"
   INTERFACE_COMPILE_OPTIONS "\$<\$<COMPILE_LANGUAGE:CXX>:>"
   INTERFACE_INCLUDE_DIRECTORIES "/home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-build;/home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-build/core/src;/home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/core/src;/home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/tpls/desul/include;/home/ark30/Files/TechniqueOptPar/TOP-25/lab3/matrix-product/build/_deps/kokkos-src/tpls/mdspan/include"
-  INTERFACE_LINK_LIBRARIES "Kokkos::LIBDL"
+  INTERFACE_LINK_LIBRARIES "Kokkos::LIBDL;OpenMP::OpenMP_CXX"
   INTERFACE_LINK_OPTIONS "\$<\$<LINK_LANGUAGE:CXX>:-DKOKKOS_DEPENDENCE>"
 )
 
